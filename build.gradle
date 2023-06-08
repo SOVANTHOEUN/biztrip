@@ -1,0 +1,57 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.13-SNAPSHOT'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'java-test-fixtures'
+}
+
+group = 'bizplay'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+	maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.security:spring-security-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.h2database:h2'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	runtimeOnly 'org.postgresql:postgresql'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'org.hibernate:hibernate-core:5.6.3.Final'
+	implementation 'com.querydsl:querydsl-jpa:5.0.0'
+	implementation 'com.querydsl:querydsl-apt:5.0.0'
+	implementation 'javax.validation:validation-api:2.0.1.Final'
+	implementation 'org.hibernate.validator:hibernate-validator:6.0.7.Final'
+	implementation 'org.hibernate.validator:hibernate-validator-annotation-processor:6.0.7.Final'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'org.modelmapper:modelmapper:2.4.4'
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+	implementation 'org.mapstruct:mapstruct:1.5.3.Final'
+	annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.3.Final'
+	implementation 'org.json:json:20210307'
+	implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.4'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
