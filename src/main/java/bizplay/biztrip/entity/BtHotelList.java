@@ -1,11 +1,14 @@
 package bizplay.biztrip.entity;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "BT_HOTEL_LIST")
 public class BtHotelList {
     @EmbeddedId
     private BtHotelListPK btHotelListPK;
+
     @Column(name = "EPS_HOTEL_ID", length = 30, nullable = false)
     private String epsHotelId;
 
@@ -66,8 +69,8 @@ public class BtHotelList {
     @Column(name = "PROPERTY_COLLECT", columnDefinition = "BIT")
     private Boolean propertyCollect;
 
-    @Column(name = "RANK", precision = 100)
-    private Double rank;
+    @Column(name = "`RANK`", precision = 100)
+    private BigDecimal rank;
 
     @Column(name = "CHECKIN", columnDefinition = "TEXT")
     private String checkin;
@@ -186,7 +189,7 @@ public class BtHotelList {
     @Column(name = "REVIEWS", columnDefinition = "TEXT")
     private String reviews;
 
-    @Column(name = "REVIEW_AVG", length = 5)
+    @Column(name = "REVIEW_AGG", length = 5)
     private String reviewAvg;
 
 }
