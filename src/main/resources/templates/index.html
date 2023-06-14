@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"-->
+<!--      layout:decorate="layouts/layout" lang="ko">-->
+
+<head>
+    <title>숙박 비즈트립</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script th:inline="javascript">
+
+    </script>
+</head>
+<body>
+
+<h1>비즈트립</h1>
+<div>
+    <h2>호텔1:</h2>
+    <span><strong>호텔명  :</strong> <span th:text="${hotel_name}"></span></span><br>
+    <span><strong>호텔도시:</strong> <span th:text="${hotel_city_name}"></span></span><br>
+    <span><strong>호텔주소:</strong> <span th:text="${hotel_address}"></span></span>
+</div>
+
+<!-- Add your content here -->
+
+</body>
+</html>

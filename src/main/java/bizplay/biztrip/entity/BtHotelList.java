@@ -195,4 +195,499 @@ public class BtHotelList {
     @Column(name = "REVIEW_AGG", length = 5)
     private String reviewAvg;
 
+    public BtHotelListPK getBtHotelListPK() {
+        return btHotelListPK;
+    }
+
+    public void setBtHotelListPK(BtHotelListPK btHotelListPK) {
+        this.btHotelListPK = btHotelListPK;
+    }
+
+    public String getEpsHotelId() {
+        return epsHotelId;
+    }
+
+    public void setEpsHotelId(String epsHotelId) {
+        this.epsHotelId = epsHotelId;
+    }
+
+    public String getHotelName() {
+        return hotelName;
+    }
+
+    public void setHotelName(String hotelName) {
+        this.hotelName = hotelName;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getAddressLine1() {
+        return addressLine1;
+    }
+
+    public void setAddressLine1(String addressLine1) {
+        this.addressLine1 = addressLine1;
+    }
+
+    public String getAddressLine2() {
+        return addressLine2;
+    }
+
+    public void setAddressLine2(String addressLine2) {
+        this.addressLine2 = addressLine2;
+    }
+
+    public String getStateProvinceCode() {
+        return stateProvinceCode;
+    }
+
+    public void setStateProvinceCode(String stateProvinceCode) {
+        this.stateProvinceCode = stateProvinceCode;
+    }
+
+    public String getStateProvinceName() {
+        return stateProvinceName;
+    }
+
+    public void setStateProvinceName(String stateProvinceName) {
+        this.stateProvinceName = stateProvinceName;
+    }
+
+    public String getPostalCode() {
+        return postalCode;
+    }
+
+    public void setPostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public Boolean getObfuscated() {
+        return obfuscated;
+    }
+
+    public void setObfuscated(Boolean obfuscated) {
+        this.obfuscated = obfuscated;
+    }
+
+    public String getLocalized() {
+        return localized;
+    }
+
+    public void setLocalized(String localized) {
+        this.localized = localized;
+    }
+
+    public String getRatings() {
+        return ratings;
+    }
+
+    public void setRatings(String ratings) {
+        this.ratings = ratings;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
+    }
+
+    public String getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public Boolean getExpediaCollect() {
+        return expediaCollect;
+    }
+
+    public void setExpediaCollect(Boolean expediaCollect) {
+        this.expediaCollect = expediaCollect;
+    }
+
+    public Boolean getPropertyCollect() {
+        return propertyCollect;
+    }
+
+    public void setPropertyCollect(Boolean propertyCollect) {
+        this.propertyCollect = propertyCollect;
+    }
+
+    public BigDecimal getRank() {
+        return rank;
+    }
+
+    public void setRank(BigDecimal rank) {
+        this.rank = rank;
+    }
+
+    public String getCheckin() {
+        return checkin;
+    }
+
+    public void setCheckin(String checkin) {
+        this.checkin = checkin;
+    }
+
+    public String getCheckoutTime() {
+        return checkoutTime;
+    }
+
+    public void setCheckoutTime(String checkoutTime) {
+        this.checkoutTime = checkoutTime;
+    }
+
+    public String getFees() {
+        return fees;
+    }
+
+    public void setFees(String fees) {
+        this.fees = fees;
+    }
+
+    public String getKnowBeforeYouGo() {
+        return knowBeforeYouGo;
+    }
+
+    public void setKnowBeforeYouGo(String knowBeforeYouGo) {
+        this.knowBeforeYouGo = knowBeforeYouGo;
+    }
+
+    public String getAttributes() {
+        return attributes;
+    }
+
+    public void setAttributes(String attributes) {
+        this.attributes = attributes;
+    }
+
+    public String getAmenitiesId() {
+        return amenitiesId;
+    }
+
+    public void setAmenitiesId(String amenitiesId) {
+        this.amenitiesId = amenitiesId;
+    }
+
+    public String getAmenitiesName() {
+        return amenitiesName;
+    }
+
+    public void setAmenitiesName(String amenitiesName) {
+        this.amenitiesName = amenitiesName;
+    }
+
+    public String getImages() {
+        return images;
+    }
+
+    public void setImages(String images) {
+        this.images = images;
+    }
+
+    public String getOnsitePayments() {
+        return onsitePayments;
+    }
+
+    public void setOnsitePayments(String onsitePayments) {
+        this.onsitePayments = onsitePayments;
+    }
+
+    public String getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(String rooms) {
+        this.rooms = rooms;
+    }
+
+    public String getRates() {
+        return rates;
+    }
+
+    public void setRates(String rates) {
+        this.rates = rates;
+    }
+
+    public String getDatesAdded() {
+        return datesAdded;
+    }
+
+    public void setDatesAdded(String datesAdded) {
+        this.datesAdded = datesAdded;
+    }
+
+    public String getDatesUpdated() {
+        return datesUpdated;
+    }
+
+    public void setDatesUpdated(String datesUpdated) {
+        this.datesUpdated = datesUpdated;
+    }
+
+    public String getDescriptions() {
+        return descriptions;
+    }
+
+    public void setDescriptions(String descriptions) {
+        this.descriptions = descriptions;
+    }
+
+    public String getStatistics() {
+        return statistics;
+    }
+
+    public void setStatistics(String statistics) {
+        this.statistics = statistics;
+    }
+
+    public String getIataAirportCode() {
+        return iataAirportCode;
+    }
+
+    public void setIataAirportCode(String iataAirportCode) {
+        this.iataAirportCode = iataAirportCode;
+    }
+
+    public String getRegistryNumber() {
+        return registryNumber;
+    }
+
+    public void setRegistryNumber(String registryNumber) {
+        this.registryNumber = registryNumber;
+    }
+
+    public String getThemes() {
+        return themes;
+    }
+
+    public void setThemes(String themes) {
+        this.themes = themes;
+    }
+
+    public String getAllInclusiveDetails() {
+        return allInclusiveDetails;
+    }
+
+    public void setAllInclusiveDetails(String allInclusiveDetails) {
+        this.allInclusiveDetails = allInclusiveDetails;
+    }
+
+    public String getTaxId() {
+        return taxId;
+    }
+
+    public void setTaxId(String taxId) {
+        this.taxId = taxId;
+    }
+
+    public String getChain() {
+        return chain;
+    }
+
+    public void setChain(String chain) {
+        this.chain = chain;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getSpokenLanguages() {
+        return spokenLanguages;
+    }
+
+    public void setSpokenLanguages(String spokenLanguages) {
+        this.spokenLanguages = spokenLanguages;
+    }
+
+    public Boolean getMultiUnit() {
+        return multiUnit;
+    }
+
+    public void setMultiUnit(Boolean multiUnit) {
+        this.multiUnit = multiUnit;
+    }
+
+    public String getCreateDt() {
+        return createDt;
+    }
+
+    public void setCreateDt(String createDt) {
+        this.createDt = createDt;
+    }
+
+    public String getCreateUser() {
+        return createUser;
+    }
+
+    public void setCreateUser(String createUser) {
+        this.createUser = createUser;
+    }
+
+    public String getModDt() {
+        return modDt;
+    }
+
+    public void setModDt(String modDt) {
+        this.modDt = modDt;
+    }
+
+    public String getModUser() {
+        return modUser;
+    }
+
+    public void setModUser(String modUser) {
+        this.modUser = modUser;
+    }
+
+    public String getIsOpen() {
+        return isOpen;
+    }
+
+    public void setIsOpen(String isOpen) {
+        this.isOpen = isOpen;
+    }
+
+    public String getDays() {
+        return days;
+    }
+
+    public void setDays(String days) {
+        this.days = days;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getReserveEarly() {
+        return reserveEarly;
+    }
+
+    public void setReserveEarly(String reserveEarly) {
+        this.reserveEarly = reserveEarly;
+    }
+
+    public String getReservationType() {
+        return reservationType;
+    }
+
+    public void setReservationType(String reservationType) {
+        this.reservationType = reservationType;
+    }
+
+    public String getKeyword() {
+        return keyword;
+    }
+
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
+    }
+
+    public String getMinPrice() {
+        return minPrice;
+    }
+
+    public void setMinPrice(String minPrice) {
+        this.minPrice = minPrice;
+    }
+
+    public String getModSts() {
+        return modSts;
+    }
+
+    public void setModSts(String modSts) {
+        this.modSts = modSts;
+    }
+
+    public String getMaxNum() {
+        return maxNum;
+    }
+
+    public void setMaxNum(String maxNum) {
+        this.maxNum = maxNum;
+    }
+
+    public String getReviewsCount() {
+        return reviewsCount;
+    }
+
+    public void setReviewsCount(String reviewsCount) {
+        this.reviewsCount = reviewsCount;
+    }
+
+    public String getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(String reviews) {
+        this.reviews = reviews;
+    }
+
+    public String getReviewAvg() {
+        return reviewAvg;
+    }
+
+    public void setReviewAvg(String reviewAvg) {
+        this.reviewAvg = reviewAvg;
+    }
 }
